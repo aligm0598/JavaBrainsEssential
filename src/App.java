@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        testDay02();
+        testDay03();
     }
 
     public static void testDay01(){
@@ -14,4 +14,17 @@ public class App {
         System.out.println("Price is " + v1.coeff);
         System.out.println("Sum is " + v1.sum);
     }
+     public static void testDay03(){
+        casting v1 = new casting();
+        System.out.println("A = " + v1.a);
+
+    }
+
+
 }
+
+
+
+
+
+
