@@ -1,12 +1,21 @@
+import java.util.Scanner;
 public class SwitchExpressions{
     public static void main(String[] args) {
-        String day = "WEDNESDAY"; 
+        Scanner in = new Scanner(System.in);
+        System.out.print("please input a week day: ");
+        String day = in.nextLine();
+        in.close();
+        
         int numLetters = switch (day) {
-            case "MONDAY", "FRIDAY", "SUNDAY" -> 6;
-            case "TUESDAY", "THURSDAY", "SATURDAY" -> 7;
-            case "WEDNESDAY" -> 9;
-            default -> 0; 
+            case "SUNDAY" -> 0;
+            case "MONDAY" -> 1;
+            case "TUESDAY" -> 2;
+            case "WEDNESDAY" -> 3;
+            case "THURSDAY" -> 4;
+            case "FRIDAY" -> 5;
+            case "SATURDAY" -> 6;
+            default -> -1; 
         };
-        System.out.println("Number of letters: " + numLetters);
+        System.out.println(day + " Number of letters: " + numLetters);
     }
 }
