@@ -4,9 +4,14 @@ public class Arrays {
         slNos[0] = 2;
         slNos[3] = 100;
 
-        int val = slNos[0]; 
+        int largerNumber = slNos[0]; 
+        if (slNos[3] > largerNumber) {
+            largerNumber = slNos[3]; 
+        }
+
         System.out.println("slNos[0]: " + slNos[0]);
         System.out.println("slNos[3]: " + slNos[3]);
-        System.out.println("val: " + val);
+        System.out.println("Larger number: " + largerNumber);
     }
 }
+
