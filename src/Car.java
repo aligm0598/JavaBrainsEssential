@@ -3,5 +3,9 @@ public class Car {
     int wheels;
     double weight;
     double topSpeed;
+
+    boolean canSeat(int seats) {
+        return this.seats >= seats;
+    }
 }
 
